@@ -50,7 +50,7 @@ def main():
     y = get_number2()
 
     if mark == '/' and int(y) == 0:
-        result = print('you cannot divide by zero')
+        result = 'you cannot divide by zero'
     elif mark == '*':
         result = int(x) * int(y)
     elif mark == '-':
