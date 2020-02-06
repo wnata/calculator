@@ -51,6 +51,8 @@ def main():
 
     if mark == '/' and int(y) == 0:
         result = 'you cannot divide by zero'
+    elif mark == '//' and int(y) == 0:
+        result = 'you cannot "//" by zero'
     elif mark == '*':
         result = int(x) * int(y)
     elif mark == '-':
