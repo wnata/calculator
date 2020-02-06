@@ -4,7 +4,7 @@ import sys
 
 def get_number1():
 
-    x = input('If you wnat to quit type "q" \nPlease type first number: ')
+    x = input('If you want to quit type "q" \nPlease type first number: ')
 
     if x.upper() == 'Q':
         sys.exit('Good Bye!')
@@ -49,8 +49,8 @@ def main():
     mark = get_mark()
     y = get_number2()
 
-    if mark == '/':
-        result = int(x) / int(y)
+    if mark == '/' and int(y) == 0:
+        result = print('you cannot divide by zero')
     elif mark == '*':
         result = int(x) * int(y)
     elif mark == '-':
@@ -61,8 +61,8 @@ def main():
         result = int(x) // int(y)
     elif mark == '**':
         result = int(x)**int(y)
-    elif mark == '/' and int(y) == 0:
-        result = print('you cannot divide by zero')
+    elif mark == '/':
+        result = int(x) / int(y)
 
     print('\nYour result is: ' + str(result))
     print('---------------------------------')
