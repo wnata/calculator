@@ -3,8 +3,9 @@ import sys
 
 
 def get_number1():
-
-    x = input('If you want to quit type "q" \nPlease type first number: ')
+    x = ''
+    while not x:
+        x = input('If you want to quit type "q" \nPlease type first number: ')
 
     if x.upper() == 'Q':
         sys.exit('Good Bye!')
@@ -21,8 +22,9 @@ def get_number1():
 
 
 def get_number2():
-
-    x = input('Please type second number: ')
+    x = ''
+    while not x:
+        x = input('Please type second number: ')
     check_d = re.search(r'\D', x)
     while check_d != None:
         print('\nPlease input only digits!')
